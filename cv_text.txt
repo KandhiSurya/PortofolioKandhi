@@ -1,0 +1,46 @@
+KANDHI SURYA ATMADJA
+Pulo Wonokromo Wetan 1/4 | kandhiatmadja@gmail.com | 082232601115
+Fresh Graduate Program Studi Sistem Informasi UPN Veteran Jawa Timur dengan pengalaman sebagai Full Stack Web Developer dan Mobile Application Developer dalam mengembangkan solusi teknologi untuk digitalisasi layanan publik. Saya telah terlibat dalam proyek di Dinas Sosial Provinsi Jawa Timur, mencakup pengembangan aplikasi pusat informasi terpadu dengan integrasi asisten AI, serta pembuatan sistem informasi pendataan penerima bantuan sosial yang dilengkapi dasbor superadmin. Sebagai alumni program Bangkit Academy MSIB 2024 pada jalur Cloud Computing, saya memiliki pemahaman kuat dalam merancang infrastruktur cloud dan arsitektur sistem yang andal. Memiliki keahlian teknis utama dalam Next.js, Tailwind CSS, Supabase, Google Cloud Platform (GCP), REST API, dan Git. Saya siap berkontribusi melalui kemampuan problem-solving, pengembangan sistem yang efisien, serta membangun solusi teknologi yang scalable dan memberikan dampak nyata bagi operasional instansi maupun bisnis.
+PENGALAMAN MAGANG
+DINAS SOSIAL PROVINSI JAWA TIMUR - Kota Surabaya, Jawa Timur, Indonesia
+Full Stack Developer
+Februari 2025 - Juli 2025
+Saya berperan sebagai Full Stack Web Developer dalam pengembangan Website Sistem Informasi Pendataan Penerima Bantuan Sosial (Bansos) yang bertujuan menyediakan wadah digital terpusat bagi Dinas Sosial. Bertanggung jawab mengembangkan keseluruhan arsitektur sistem dari sisi frontend maupun backend, serta merancang fitur profiling data yang mencakup manajemen hak akses terstruktur, termasuk dasbor superadmin untuk mendaftarkan akun operator dan memonitor data pengajuan bantuan dari berbagai wilayah administratif secara real-time. Selain itu, saya merancang skema basis data yang aman dan efisien untuk memfasilitasi kelancaran proses input, verifikasi, dan manajemen data penerima bantuan dalam skala besar. Teknologi yang digunakan meliputi Next.js untuk membangun antarmuka web yang reaktif dan berkinerja tinggi, serta Supabase yang dimanfaatkan sebagai Backend-as-a-Service (BaaS) untuk menangani autentikasi dan penyimpanan data. Kontribusi ini menghasilkan platform terintegrasi yang berhasil memecahkan masalah ketiadaan sistem pendataan sebelumnya, mempermudah instansi dalam melakukan validasi data secara terpusat, dan secara signifikan meningkatkan akurasi serta transparansi dalam pemantauan distribusi bantuan sosial.
+DINAS SOSIAL PROVINSI JAWA TIMUR - Kota Surabaya, Jawa Timur, Indonesia
+Mobile Application Developer
+Februari 2025 - Juli 2025
+Saya berperan sebagai Mobile Application Developer Intern dalam pengembangan aplikasi pusat informasi terpadu Dinas Sosial Provinsi Jawa Timur yang menyediakan layanan informasi publik secara komprehensif, seperti lokasi kantor, program bantuan sosial, dan kontak resmi instansi. Bertanggung jawab mengembangkan antarmuka aplikasi yang intuitif, merancang arsitektur backend, serta mengintegrasikan fitur Artificial Intelligence (AI) sebagai asisten virtual yang mampu merespons pertanyaan spesifik dari publik secara otomatis dan real-time. Selain itu, saya merancang struktur basis data informasi agar data layanan dapat diakses dengan cepat dan terpusat tanpa membebani server. Teknologi yang digunakan meliputi Tailwind CSS untuk styling antarmuka, Supabase sebagai Backend-as-a-Service (BaaS), serta integrasi AI API. Kontribusi ini menghasilkan platform digital yang lebih efisien bagi masyarakat dalam mengakses informasi layanan sosial secara mandiri, sekaligus secara signifikan mengurangi beban kerja administratif instansi dalam menjawab aduan dan pertanyaan berulang, sehingga meningkatkan efisiensi operasional pelayanan publik.
+PENDIDIKAN
+S1 - Universitas Pembangunan Nasional Veteran Jawa Timur, Kota Surabaya, Jawa Timur, Indonesia
+SISTEM INFORMASI - 3.69
+2022 - 2026
+KETERAMPILAN
+Javascript, Tailwind CSS, next.js, Laravel, Artificial Intelligence (AI), REST API / API Development, Google Cloud Platform (GCP), Cloud Computing, PHP, MySQL, HTML, Python.
+PELATIHAN
+Teknologi Informasi Dan Komunikasi - Belajar Dasar Pemrograman JavaScript
+Dicoding Indonesia
+Agustus 2024 - Januari 2025
+Teknologi Informasi Dan Komunikasi - Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud
+Dicoding Indonesia
+Agustus 2024 - Januari 2025
+Teknologi Informasi Dan Komunikasi - Belajar Dasar Pemrograman Web
+Dicoding Indonesia
+Agustus 2024 - Januari 2025
+Teknologi Informasi Dan Komunikasi - Memulai Dasar Pemrograman untuk Menjadi Pengembang Software
+Dicoding Indonesia
+Agustus 2024 - Januari 2025
+Teknologi Informasi Dan Komunikasi - Belajar Dasar Git dengan GitHub
+Dicoding Indonesia
+Teknologi Informasi Dan Komunikasi - Menjadi Google Cloud Engineer
+Dicoding Indonesia
+Teknologi Informasi Dan Komunikasi - Belajar Dasar AI
+Dicoding Indonesia
+Teknologi Informasi Dan Komunikasi - Belajar Penerapan Machine Learning dengan Google Cloud
+Dicoding Indonesia
+Teknologi Informasi Dan Komunikasi - MSIB Bangkit 2024 by Google, Goto, Traveloka
+Dicoding Indonesia, Google, Goto, Traveloka
+Agustus 2024 - Januari 2025
+Agustus 2024 - Januari 2025
+Agustus 2024 - Januari 2025
+Agustus 2024 - Januari 2025
+Agustus 2024 - Januari 2025
