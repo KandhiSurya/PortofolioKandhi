@@ -89,7 +89,7 @@ const PROJECTS: Project[] = [
     browserUrl: 'https://dinsos.jatimprov.go.id/bansos-portal',
     tags: ['Next.js', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'RBAC', 'REST API'],
     demoUrl: 'https://dinsos.jatimprov.go.id',
-    githubUrl: 'https://github.com/KandhiSurya',
+    githubUrl: 'https://github.com/KandhiSurya/sistem-bansos',
   },
   {
     id: 'public-info-ai',
