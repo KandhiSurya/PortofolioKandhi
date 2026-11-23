@@ -1,38 +1,26 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/context/ThemeContext';
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  weight: ['400', '500', '600', '700', '900'],
-  display: 'swap',
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
-  weight: ['400', '500', '600', '700'],
-  display: 'swap',
-});
-
 export const metadata: Metadata = {
-  title: 'Kandhi Surya Atmadja | Full Stack Engineer & Cloud Systems Specialist',
+  title: 'Kandhi Surya Atmadja | Full Stack Web & Mobile Developer',
   description:
-    'Website portofolio profesional Kandhi Surya Atmadja, Sarjana Komputer S1 Sistem Informasi UPN Veteran Jawa Timur (IPK 3.69) dan alumni Bangkit Academy 2024 Cloud Computing. Berpengalaman di Dinas Sosial Provinsi Jawa Timur.',
+    'Website portofolio profesional Kandhi Surya Atmadja, lulusan Sistem Informasi UPN Veteran Jawa Timur (GPA 3.69 / 4.00), alumni Bangkit Academy 2024 Cloud Computing, dan berpengalaman di Dinas Sosial Provinsi Jawa Timur.',
   keywords: [
     'Kandhi Surya Atmadja',
-    'Full Stack Developer',
-    'Cloud Systems Specialist',
-    'Bangkit Academy 2024',
-    'Sistem Informasi UPN Veteran Jawa Timur',
+    'Full Stack Web Developer',
+    'Mobile Application Developer',
     'Next.js',
-    'Tailwind CSS',
+    'React',
+    'Expo Go',
+    'Laravel',
+    'Supabase',
     'PostgreSQL',
-    'REST API',
     'Google Cloud Platform',
+    'Artificial Intelligence',
     'Dinas Sosial Provinsi Jawa Timur',
+    'Bangkit Academy 2024',
+    'UPN Veteran Jawa Timur',
   ],
   authors: [{ name: 'Kandhi Surya Atmadja' }],
 };
@@ -43,11 +31,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="id"
-      className={`${inter.variable} ${jetbrainsMono.variable}`}
-      style={{ scrollBehavior: 'smooth' }}
-    >
+    <html lang="id" data-scroll-behavior="smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <ThemeProvider>
           {children}
