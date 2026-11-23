@@ -125,25 +125,25 @@ const PROJECTS: Project[] = [
     type: 'Cloud Infrastructure Architecture',
     association: 'MSIB Bangkit Academy 2024 by Google, GoTo, Traveloka',
     period: 'Aug 2024 – Jan 2025',
-    title: 'Cloud Architecture & Scalable Back-End Development',
+    title: 'AsikAI — Cloud Architecture & Scalable Back-End (Bangkit Capstone)',
     summary:
-      'Distributed cloud infrastructure engineering on Google Cloud Platform (GCP) featuring high-throughput REST API backend services and Docker container orchestration.',
+      'Distributed cloud infrastructure and backend engineering on Google Cloud Platform (GCP) for AsikAI (Capstone Team C242-PS432), featuring high-throughput REST APIs, containerization, and Machine Learning model deployment.',
     problem:
-      'Modern enterprise systems require scalable, decoupled backend infrastructure capable of handling high traffic surges without compromising security, low latency, or continuous service availability.',
+      'Deploying intelligent machine learning applications requires resilient, scalable cloud infrastructure capable of handling high traffic surges without compromising low inference latency or API security.',
     solution:
-      'Architected distributed cloud systems on Google Cloud Platform (GCP) utilizing modern RESTful API services, machine learning model integration, and Docker containerization.',
+      'Architected distributed cloud systems on Google Cloud Platform (GCP) for AsikAI, utilizing modern RESTful API services, containerized services on Cloud Run, and automated Machine Learning model integration.',
     highlights: [
-      'Distributed cloud architecture leveraging Google Cloud Platform services (Compute Engine, Cloud Storage, VPC Networking)',
-      'Scalable backend development using RESTful APIs with structured middleware pipelines and secure IAM token authentication',
-      'Machine Learning model deployment on GCP and software collaboration using standard Git/GitHub collaborative workflows',
-      'Rigorous backend endpoint load testing ensuring production deployment readiness',
+      'Engineered cloud infrastructure for Bangkit Capstone Team C242-PS432 (AsikAI) leveraging Google Cloud Platform (Cloud Run, Cloud Storage, VPC)',
+      'Developed high-performance RESTful API endpoints for seamless communication between mobile clients and back-end services',
+      'Deployed Machine Learning models on GCP, enabling real-time inference and low-latency response payloads',
+      'Implemented collaborative software engineering workflows with structured Git/GitHub branching and team code reviews',
     ],
     impact:
-      'Strengthened production cloud deployment readiness and mastered Google-standard collaborative software engineering workflows.',
+      'Delivered a fully integrated cloud-native architecture supporting real-time AI capabilities and graduating with distinction from Bangkit Academy 2024.',
     image: '/images/project-4.jpg',
     mockupType: 'cloud',
-    tags: ['Google Cloud Platform', 'Cloud Computing', 'REST API', 'Machine Learning', 'Docker', 'Git/GitHub'],
-    githubUrl: 'https://github.com/KandhiSurya',
+    tags: ['Google Cloud Platform', 'Cloud Run', 'REST API', 'Machine Learning', 'Docker', 'Git/GitHub'],
+    githubUrl: 'https://github.com/C242-PS432-AsikAI',
   },
 ];
 
@@ -271,6 +271,7 @@ const EXPERIENCES = [
       'Successfully graduated and completed 8 official technical certification modules from Google and Dicoding Indonesia with distinction.',
     ],
     tags: ['Google Cloud Platform', 'Cloud Computing', 'REST API', 'Machine Learning', 'Git/GitHub'],
+    repoUrl: 'https://github.com/C242-PS432-AsikAI',
   },
 ];
 
