@@ -116,7 +116,6 @@ const PROJECTS: Project[] = [
     image: '/images/project-2.jpg',
     mockupType: 'mobile',
     tags: ['React', 'Expo Go', 'Laravel', 'PHP', 'Supabase', 'AI API', 'REST API'],
-    demoUrl: 'https://dinsos.jatimprov.go.id',
     githubUrl: 'https://github.com/Kryx404/dinsos-mobile-fix',
   },
   {
@@ -144,7 +143,6 @@ const PROJECTS: Project[] = [
     image: '/images/project-4.jpg',
     mockupType: 'cloud',
     tags: ['Google Cloud Platform', 'Cloud Computing', 'REST API', 'Machine Learning', 'Docker', 'Git/GitHub'],
-    demoUrl: 'https://github.com/KandhiSurya',
     githubUrl: 'https://github.com/KandhiSurya',
   },
 ];
