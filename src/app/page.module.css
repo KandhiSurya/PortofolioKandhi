@@ -1176,6 +1176,34 @@
   margin-top: 0.5rem;
 }
 
+.expActionsRow {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.expLiveBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.expLiveBtn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 .expRepoBtn {
   display: inline-flex;
   align-items: center;
@@ -1189,7 +1217,6 @@
   font-weight: 500;
   text-decoration: none;
   transition: all var(--transition);
-  margin-left: auto;
 }
 
 .expRepoBtn:hover {

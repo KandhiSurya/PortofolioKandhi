@@ -86,9 +86,9 @@ const PROJECTS: Project[] = [
       'Replaced manual tracking with a centralized platform, drastically improving recipient validation accuracy and social assistance distribution transparency.',
     image: '/images/project-1.jpg',
     mockupType: 'browser',
-    browserUrl: 'https://dinsos.jatimprov.go.id/bansos-portal',
+    browserUrl: 'https://sistem-bansos-three.vercel.app',
     tags: ['Next.js', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'RBAC', 'REST API'],
-    demoUrl: 'https://dinsos.jatimprov.go.id',
+    demoUrl: 'https://sistem-bansos-three.vercel.app/',
     githubUrl: 'https://github.com/KandhiSurya/sistem-bansos',
   },
   {
@@ -237,6 +237,7 @@ const EXPERIENCES = [
     ],
     tags: ['Next.js', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'RBAC', 'Data Validation'],
     repoUrl: 'https://github.com/KandhiSurya/sistem-bansos',
+    liveUrl: 'https://sistem-bansos-three.vercel.app/',
   },
   {
     idx: '02',
@@ -1016,18 +1017,32 @@ export default function Home() {
                         {t}
                       </span>
                     ))}
-                    {'repoUrl' in item && item.repoUrl && (
-                      <a
-                        href={item.repoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.expRepoBtn}
-                      >
-                        <GithubIcon size={13} />
-                        <span>View Repository</span>
-                        <ArrowUpRight size={12} />
-                      </a>
-                    )}
+                    <div className={styles.expActionsRow}>
+                      {'liveUrl' in item && item.liveUrl && (
+                        <a
+                          href={item.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.expLiveBtn}
+                        >
+                          <ExternalLink size={12} />
+                          <span>Live Platform</span>
+                          <ArrowUpRight size={11} />
+                        </a>
+                      )}
+                      {'repoUrl' in item && item.repoUrl && (
+                        <a
+                          href={item.repoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.expRepoBtn}
+                        >
+                          <GithubIcon size={13} />
+                          <span>View Repository</span>
+                          <ArrowUpRight size={11} />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
