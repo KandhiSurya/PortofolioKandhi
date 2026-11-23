@@ -117,7 +117,7 @@ const PROJECTS: Project[] = [
     mockupType: 'mobile',
     tags: ['React', 'Expo Go', 'Laravel', 'PHP', 'Supabase', 'AI API', 'REST API'],
     demoUrl: 'https://dinsos.jatimprov.go.id',
-    githubUrl: 'https://github.com/KandhiSurya',
+    githubUrl: 'https://github.com/Kryx404/dinsos-mobile-fix',
   },
   {
     id: 'cloud-backend-gcp',
@@ -254,6 +254,7 @@ const EXPERIENCES = [
       'Reduced repetitive administrative inquiry workloads for agency helpdesk staff while enhancing public service operational efficiency.',
     ],
     tags: ['React', 'Expo Go', 'Laravel', 'PHP', 'Supabase', 'AI Virtual Assistant'],
+    repoUrl: 'https://github.com/Kryx404/dinsos-mobile-fix',
   },
   {
     idx: '03',
