@@ -167,8 +167,8 @@ export default function Navbar() {
                 GitHub ↗
               </a>
               <a href="mailto:kandhiatmadja@gmail.com">Email ↗</a>
-              <a href="/CV_KANDHI_SURYA_ATMADJA.docx" download>
-                Resume DOCX ↗
+              <a href="/CV_Kandhi_Surya_Atmadja.pdf" target="_blank" rel="noopener noreferrer" download="CV_Kandhi_Surya_Atmadja.pdf">
+                Resume PDF ↗
               </a>
             </div>
             <p className={styles.mobileFootnote}>SURABAYA, JAWA TIMUR · INDONESIA</p>

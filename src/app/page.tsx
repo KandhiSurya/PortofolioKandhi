@@ -565,12 +565,14 @@ export default function Home() {
                     <span>LinkedIn</span>
                   </a>
                   <a
-                    href="/CV_KANDHI_SURYA_ATMADJA.docx"
-                    download
+                    href="/CV_Kandhi_Surya_Atmadja.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download="CV_Kandhi_Surya_Atmadja.pdf"
                     className={styles.heroChip}
                   >
                     <FileText size={14} />
-                    <span>Resume (DOCX)</span>
+                    <span>Resume (PDF)</span>
                   </a>
                 </div>
               </div>

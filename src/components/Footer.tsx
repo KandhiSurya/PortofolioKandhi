@@ -101,11 +101,13 @@ export default function Footer() {
             <ArrowUpRight size={12} />
           </a>
           <a
-            href="/CV_KANDHI_SURYA_ATMADJA.docx"
-            download
+            href="/CV_Kandhi_Surya_Atmadja.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="CV_Kandhi_Surya_Atmadja.pdf"
             className={styles.socialChip}
           >
-            <span>Resume (DOCX)</span>
+            <span>Resume (PDF)</span>
             <ArrowUpRight size={12} />
           </a>
         </div>
