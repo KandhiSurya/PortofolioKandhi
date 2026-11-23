@@ -598,19 +598,24 @@ export default function Home() {
                         <span className={styles.codeKeyword}>const</span>{' '}
                         <span className={styles.codeVar}>engineer</span> = &#123;{'\n'}
                         {'  '}<span className={styles.codeKey}>name</span>: <span className={styles.codeString}>&quot;Kandhi Surya Atmadja&quot;</span>,{'\n'}
-                        {'  '}<span className={styles.codeKey}>degree</span>: <span className={styles.codeString}>&quot;B.S. in Information Systems (UPNVJT)&quot;</span>,{'\n'}
-                        {'  '}<span className={styles.codeKey}>gpa</span>: <span className={styles.codeNum}>3.69</span>, <span className={styles.codeComment}>// Honors</span>{'\n'}
-                        {'  '}<span className={styles.codeKey}>focus</span>: [<span className={styles.codeString}>&quot;Full Stack Web&quot;</span>, <span className={styles.codeString}>&quot;Mobile Expo&quot;</span>, <span className={styles.codeString}>&quot;Cloud Systems&quot;</span>],{'\n'}
-                        {'  '}<span className={styles.codeKey}>publicInternship</span>: <span className={styles.codeString}>&quot;Dinas Sosial Provinsi Jawa Timur&quot;</span>,{'\n'}
-                        {'  '}<span className={styles.codeKey}>cloudCertification</span>: <span className={styles.codeString}>&quot;Bangkit 2024 by Google&quot;</span>,{'\n'}
-                        {'  '}<span className={styles.codeKey}>techStack</span>: &#123;{'\n'}
-                        {'    '}<span className={styles.codeKey}>web</span>: [<span className={styles.codeString}>&quot;Next.js 16&quot;</span>, <span className={styles.codeString}>&quot;React.js&quot;</span>, <span className={styles.codeString}>&quot;Tailwind&quot;</span>],{'\n'}
-                        {'    '}<span className={styles.codeKey}>mobile</span>: [<span className={styles.codeString}>&quot;Expo Go&quot;</span>, <span className={styles.codeString}>&quot;React Native&quot;</span>],{'\n'}
-                        {'    '}<span className={styles.codeKey}>backend</span>: [<span className={styles.codeString}>&quot;Laravel&quot;</span>, <span className={styles.codeString}>&quot;FastAPI&quot;</span>, <span className={styles.codeString}>&quot;REST APIs&quot;</span>],{'\n'}
-                        {'    '}<span className={styles.codeKey}>databases</span>: [<span className={styles.codeString}>&quot;Supabase&quot;</span>, <span className={styles.codeString}>&quot;PostgreSQL&quot;</span>, <span className={styles.codeString}>&quot;MySQL&quot;</span>],{'\n'}
-                        {'    '}<span className={styles.codeKey}>cloud</span>: [<span className={styles.codeString}>&quot;Google Cloud Platform&quot;</span>, <span className={styles.codeString}>&quot;Docker&quot;</span>]{'\n'}
+                        {'  '}<span className={styles.codeKey}>title</span>: <span className={styles.codeString}>&quot;Full Stack Web &amp; Mobile Developer&quot;</span>,{'\n'}
+                        {'  '}<span className={styles.codeKey}>education</span>: &#123;{'\n'}
+                        {'    '}<span className={styles.codeKey}>institution</span>: <span className={styles.codeString}>&quot;UPN Veteran Jawa Timur&quot;</span>,{'\n'}
+                        {'    '}<span className={styles.codeKey}>degree</span>: <span className={styles.codeString}>&quot;Bachelor of Information Systems&quot;</span>,{'\n'}
+                        {'    '}<span className={styles.codeKey}>gpa</span>: <span className={styles.codeNum}>3.69</span>, <span className={styles.codeComment}>// Honors (Sangat Memuaskan)</span>{'\n'}
                         {'  '}&#125;,{'\n'}
-                        {'  '}<span className={styles.codeKey}>status</span>: <span className={styles.codeString}>&quot;READY_FOR_DEPLOYMENT&quot;</span>{'\n'}
+                        {'  '}<span className={styles.codeKey}>workExperience</span>: &#123;{'\n'}
+                        {'    '}<span className={styles.codeKey}>govInternship</span>: <span className={styles.codeString}>&quot;Dinas Sosial Provinsi Jawa Timur&quot;</span>,{'\n'}
+                        {'    '}<span className={styles.codeKey}>cloudAcademy</span>: <span className={styles.codeString}>&quot;Bangkit 2024 by Google, GoTo, Traveloka&quot;</span>{'\n'}
+                        {'  '}&#125;,{'\n'}
+                        {'  '}<span className={styles.codeKey}>techStack</span>: &#123;{'\n'}
+                        {'    '}<span className={styles.codeKey}>languages</span>: [<span className={styles.codeString}>&quot;JavaScript&quot;</span>, <span className={styles.codeString}>&quot;PHP&quot;</span>, <span className={styles.codeString}>&quot;Python&quot;</span>],{'\n'}
+                        {'    '}<span className={styles.codeKey}>webAndMobile</span>: [<span className={styles.codeString}>&quot;Next.js&quot;</span>, <span className={styles.codeString}>&quot;React.js&quot;</span>, <span className={styles.codeString}>&quot;Expo Go&quot;</span>, <span className={styles.codeString}>&quot;Tailwind CSS&quot;</span>],{'\n'}
+                        {'    '}<span className={styles.codeKey}>backendAndApi</span>: [<span className={styles.codeString}>&quot;Laravel&quot;</span>, <span className={styles.codeString}>&quot;REST APIs&quot;</span>, <span className={styles.codeString}>&quot;AI Virtual Assistant&quot;</span>],{'\n'}
+                        {'    '}<span className={styles.codeKey}>cloudAndDb</span>: [<span className={styles.codeString}>&quot;Google Cloud Platform&quot;</span>, <span className={styles.codeString}>&quot;Supabase&quot;</span>, <span className={styles.codeString}>&quot;PostgreSQL&quot;</span>, <span className={styles.codeString}>&quot;MySQL&quot;</span>]{'\n'}
+                        {'  '}&#125;,{'\n'}
+                        {'  '}<span className={styles.codeKey}>location</span>: <span className={styles.codeString}>&quot;Surabaya, Indonesia&quot;</span>,{'\n'}
+                        {'  '}<span className={styles.codeKey}>status</span>: <span className={styles.codeString}>&quot;OPEN_TO_OPPORTUNITIES&quot;</span>{'\n'}
                         &#125;;
                       </code>
                     </pre>
