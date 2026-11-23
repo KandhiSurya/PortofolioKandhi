@@ -67,23 +67,23 @@ const PROJECTS: Project[] = [
     category: 'web',
     categoryLabel: 'Gov Web Platform',
     type: 'Full Stack Web Platform',
-    association: 'Dinas Sosial Provinsi Jawa Timur',
+    association: 'East Java Provincial Social Service (Dinas Sosial Jatim)',
     period: 'Jan 2026 – Jul 2026',
     title: 'Social Assistance Recipient Data Collection System (SI-BANSOS)',
     summary:
-      'Platform digital web terpusat untuk mendigitalkan entri data penerima bantuan sosial, validasi kelayakan otomatis, dan monitoring penyaluran kuota bantuan multi-wilayah se-Jawa Timur.',
+      'Centralized digital web platform to digitize social assistance beneficiary intake, automated eligibility verification, and multi-regional quota monitoring across East Java Province.',
     problem:
-      'Pelacakan manual dan desentralisasi data penerima bantuan sosial lintas kabupaten/kota sebelumnya menghadapi risiko redudansi data, proses validasi administratif yang memakan waktu, dan tantangan transparansi distribusi bantuan publik.',
+      'Manual records and decentralized beneficiary data across regencies and cities historically faced high risks of data redundancy, time-consuming administrative verification, and transparency challenges in public aid distribution.',
     solution:
-      'Membangun platform web terpadu berbasis Next.js dan Supabase dengan arsitektur data terpusat, dasbor superadmin real-time, validasi kelayakan otomatis, serta Role-Based Access Control (RBAC) berjenjang.',
+      'Architected an integrated web platform powered by Next.js and Supabase featuring centralized data profiling, real-time superadmin monitoring dashboards, automated eligibility verification, and multi-tiered Role-Based Access Control (RBAC).',
     highlights: [
-      'Role-Based Access Control (RBAC) terstruktur: Super Admin Provinsi, Verifikator Divisi, dan Operator Daerah Kabupaten/Kota',
-      'Dasbor analitik real-time untuk memantau kuota bansos dan verifikasi pengajuan warga se-Jawa Timur',
-      'Skema basis data Supabase (PostgreSQL) yang aman dan teroptimasi untuk memangkas latensi query data skala besar',
-      'Validasi formulir real-time untuk mencegah entri data ganda dan inkonsistensi nomor kependudukan',
+      'Structured Role-Based Access Control (RBAC): Provincial Super Admin, Division Verifier, and Regional Operator',
+      'Real-time analytics dashboard monitoring social assistance quota and citizen application verification across East Java',
+      'Secure, optimized Supabase (PostgreSQL) relational database schema cutting query latency on large-scale datasets',
+      'Real-time form validation preventing duplicate entries and civil identity number (NIK) discrepancies',
     ],
     impact:
-      'Menggantikan pelacakan manual dengan platform terpusat, secara drastis meningkatkan akurasi validasi data penerima dan transparansi penyaluran bantuan sosial.',
+      'Replaced manual tracking with a centralized platform, drastically improving recipient validation accuracy and social assistance distribution transparency.',
     image: '/images/project-1.jpg',
     mockupType: 'browser',
     browserUrl: 'https://dinsos.jatimprov.go.id/bansos-portal',
@@ -96,23 +96,23 @@ const PROJECTS: Project[] = [
     category: 'mobile',
     categoryLabel: 'Mobile App & AI Assistant',
     type: 'Cross-Platform Mobile Application',
-    association: 'Dinas Sosial Provinsi Jawa Timur',
+    association: 'East Java Provincial Social Service (Dinas Sosial Jatim)',
     period: 'Feb 2025 – Jul 2025',
     title: 'Public Information Center & AI Virtual Assistant Mobile App',
     summary:
-      'Aplikasi mobile pusat informasi publik terpadu yang diintegrasikan dengan asisten virtual Artificial Intelligence (AI) untuk merespons pertanyaan dan tracking aduan warga secara instan 24/7.',
+      'Integrated public information mobile application equipped with an Artificial Intelligence (AI) virtual assistant to automatically answer citizen inquiries and track complaints 24/7 in real time.',
     problem:
-      'Tingginya volume pertanyaan publik yang repetitif mengenai syarat program bantuan sosial, lokasi unit dinas, dan kontak resmi membebani staf helpdesk kantor dinas selama jam kerja.',
+      'High volumes of repetitive public inquiries regarding social assistance program requirements, agency office locations, and official contacts overwhelmed helpdesk administrative staff during operational hours.',
     solution:
-      'Mengembangkan aplikasi mobile responsif berbasis React dan Expo Go yang terhubung ke back-end REST API Laravel dan basis data Supabase, serta mengintegrasikan AI Virtual Assistant API untuk layanan informasi otomatis.',
+      'Engineered a responsive mobile application built with React and Expo Go connected to a Laravel REST API backend and Supabase database, integrating an AI Virtual Assistant API for automated round-the-clock public assistance.',
     highlights: [
-      'Integrasi Artificial Intelligence (AI) API untuk bertindak sebagai asisten virtual cerdas yang menjawab pertanyaan warga secara otomatis dan real-time',
-      'Antarmuka mobile responsif menggunakan React dan Expo Go untuk performa optimal di Android & iOS',
-      'Back-end API berbasis Laravel dan basis data Supabase terpusat yang efisien tanpa membebani resource server dinas',
-      'Direktori digital lokasi kantor dinas se-Jatim, katalog bantuan aktif, dan kontak resmi dalam satu genggaman',
+      'Artificial Intelligence (AI) API integration acting as an automated smart virtual assistant responding to citizen questions in real time',
+      'Cross-platform responsive mobile interface built with React and Expo Go delivering optimal performance on Android and iOS',
+      'Centralized Laravel RESTful API backend and Supabase database managing high query loads without server overhead',
+      'Digital directory of provincial agency office locations, active aid programs, and verified emergency contacts in one app',
     ],
     impact:
-      'Membuka akses mandiri informasi publik warga sekaligus memangkas beban kerja administratif staf dinas dalam menangani pertanyaan berulang.',
+      'Enabled 24/7 self-service public information access while significantly reducing repetitive administrative inquiry workloads for agency staff.',
     image: '/images/project-2.jpg',
     mockupType: 'mobile',
     tags: ['React', 'Expo Go', 'Laravel', 'PHP', 'Supabase', 'AI API', 'REST API'],
@@ -128,19 +128,19 @@ const PROJECTS: Project[] = [
     period: 'Aug 2024 – Jan 2025',
     title: 'Cloud Architecture & Scalable Back-End Development',
     summary:
-      'Perancangan infrastruktur cloud terdistribusi di Google Cloud Platform (GCP) dengan REST API backend berkemampuan throughput tinggi dan orkestrasi kontainer Docker.',
+      'Distributed cloud infrastructure engineering on Google Cloud Platform (GCP) featuring high-throughput REST API backend services and Docker container orchestration.',
     problem:
-      'Sistem aplikasi modern memerlukan infrastruktur backend yang scalable, decoupled, dan siap diuji coba dengan traffic tinggi tanpa mengorbankan keamanan atau ketersediaan layanan.',
+      'Modern enterprise systems require scalable, decoupled backend infrastructure capable of handling high traffic surges without compromising security, low latency, or continuous service availability.',
     solution:
-      'Merancang arsitektur sistem terdistribusi di Google Cloud Platform (GCP) menggunakan REST API backend modern, integrasi machine learning di GCP, dan manajemen kontainer Docker.',
+      'Architected distributed cloud systems on Google Cloud Platform (GCP) utilizing modern RESTful API services, machine learning model integration, and Docker containerization.',
     highlights: [
-      'Perancangan arsitektur cloud terdistribusi memanfaatkan layanan Google Cloud Platform (Compute Engine, Cloud Storage, Networking)',
-      'Pengembangan backend scalable berbasis RESTful API dengan struktur middleware dan autentikasi aman',
-      'Penerapan Machine Learning di GCP serta kolaborasi rekayasa perangkat lunak menggunakan Git/GitHub workflows',
-      'Pengujian performa endpoint backend untuk memastikan kesiapan deployment produksi',
+      'Distributed cloud architecture leveraging Google Cloud Platform services (Compute Engine, Cloud Storage, VPC Networking)',
+      'Scalable backend development using RESTful APIs with structured middleware pipelines and secure IAM token authentication',
+      'Machine Learning model deployment on GCP and software collaboration using standard Git/GitHub collaborative workflows',
+      'Rigorous backend endpoint load testing ensuring production deployment readiness',
     ],
     impact:
-      'Memperkuat kesiapan deployment cloud berstandar industri dan menguasai praktik kolaboratif rekayasa perangkat lunak standar Google.',
+      'Strengthened production cloud deployment readiness and mastered Google-standard collaborative software engineering workflows.',
     image: '/images/project-4.jpg',
     mockupType: 'cloud',
     tags: ['Google Cloud Platform', 'Cloud Computing', 'REST API', 'Machine Learning', 'Docker', 'Git/GitHub'],
@@ -224,16 +224,16 @@ const EXPERIENCES = [
     period: 'Jan 2026 – Jul 2026',
     year: '2026',
     role: 'Full Stack Developer (Internship)',
-    org: 'Dinas Sosial Provinsi Jawa Timur',
+    org: 'East Java Provincial Social Service (Dinas Sosial Jatim)',
     location: 'Surabaya, Indonesia',
     kind: 'Public Sector Internship',
     summary:
-      'Mengembangkan Sistem Informasi Pendataan Penerima Bantuan Sosial (Bansos) berbasis web menggunakan Next.js dan Supabase sebagai platform digital terpusat.',
+      'Developed the web-based Social Assistance (Bansos) Recipient Data Collection System using Next.js and Supabase as a centralized digital platform.',
     contributions: [
-      'Merancang arsitektur sistem front-end dan back-end lengkap dengan fitur profiling data penerima dan manajemen hak akses terstruktur.',
-      'Membangun dasbor superadmin untuk manajemen akun operator dan pemantauan distribusi bantuan sosial secara real-time lintas wilayah administratif.',
-      'Menyusun skema basis data yang aman pada Supabase untuk mengefisiensikan validasi data terpusat dan meningkatkan transparansi penyaluran bantuan publik.',
-      'Mengimplementasikan Role-Based Access Control (RBAC) berjenjang multi-level (Super Admin, Divisi Provinsi, Operator Daerah).',
+      'Designed comprehensive front-end and back-end system architectures alongside recipient data profiling features and structured access management.',
+      'Built a real-time superadmin dashboard for operator account management and live social assistance distribution monitoring across administrative regions.',
+      'Structured an optimized, secure relational database schema on Supabase to streamline centralized data validation and improve distribution transparency.',
+      'Implemented multi-tiered Role-Based Access Control (RBAC): Super Admin, Provincial Division, and Regional Operator.',
     ],
     tags: ['Next.js', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'RBAC', 'Data Validation'],
   },
@@ -241,16 +241,16 @@ const EXPERIENCES = [
     idx: '02',
     period: 'Feb 2025 – Jul 2025',
     role: 'Mobile Application Developer (Internship)',
-    org: 'Dinas Sosial Provinsi Jawa Timur',
+    org: 'East Java Provincial Social Service (Dinas Sosial Jatim)',
     location: 'Surabaya, Indonesia',
     kind: 'Public Sector Internship',
     summary:
-      'Mengembangkan aplikasi mobile pusat informasi publik terintegrasi yang menyediakan lokasi kantor dinas, program bansos, dan kontak resmi.',
+      'Developed an integrated public information center mobile application providing agency office locations, social assistance programs, and verified official contacts.',
     contributions: [
-      'Mengintegrasikan Artificial Intelligence (AI) API sebagai asisten virtual otomatis untuk merespons pertanyaan dan aduan warga secara instan dan real-time.',
-      'Membangun antarmuka mobile responsif menggunakan React dan Expo Go yang terhubung ke back-end API Laravel dan basis data Supabase terpusat.',
-      'Memastikan integrasi API berjalan efisien dan ringan tanpa membebani resource server dinas.',
-      'Memangkas beban kerja administratif staf dinas dalam menangani pertanyaan publik yang berulang sekaligus meningkatkan efisiensi operasional layanan.',
+      'Integrated an Artificial Intelligence (AI) API as an automated virtual assistant to respond to citizen inquiries and feedback in real time.',
+      'Engineered the mobile user interface using React and Expo Go, connected to a centralized Laravel RESTful API backend and Supabase database.',
+      'Optimized network payloads and API query handling to deliver responsive performance without overloading institutional server infrastructure.',
+      'Reduced repetitive administrative inquiry workloads for agency helpdesk staff while enhancing public service operational efficiency.',
     ],
     tags: ['React', 'Expo Go', 'Laravel', 'PHP', 'Supabase', 'AI Virtual Assistant'],
   },
@@ -262,12 +262,12 @@ const EXPERIENCES = [
     location: 'Indonesia',
     kind: 'Independent Study',
     summary:
-      'Program studi independen intensif berstandar industri dengan fokus arsitektur Google Cloud Platform (GCP), backend services, dan deployment scalable.',
+      'Industry-led intensive study program focusing on Google Cloud Platform (GCP) distributed architecture, scalable backend services, and production deployment.',
     contributions: [
-      'Merancang infrastruktur cloud dan arsitektur sistem terdistribusi menggunakan Google Cloud Platform (GCP).',
-      'Mengembangkan back-end services dan REST API yang scalable untuk mendukung aplikasi berbasis web, diiringi penerapan Machine Learning di GCP.',
-      'Menerapkan praktik kolaborasi rekayasa perangkat lunak berstandar industri dengan alur kerja Git/GitHub terstruktur.',
-      'Lulus 8 modul sertifikasi teknis resmi dari Google dan Dicoding Indonesia dengan hasil sangat memuaskan.',
+      'Architected distributed cloud infrastructure and scalable system architectures utilizing Google Cloud Platform (GCP) services.',
+      'Developed scalable backend services and REST APIs to support web-based applications, alongside applying Machine Learning on GCP.',
+      'Applied industry-standard software engineering collaborative practices with structured Git/GitHub workflows.',
+      'Successfully graduated and completed 8 official technical certification modules from Google and Dicoding Indonesia with distinction.',
     ],
     tags: ['Google Cloud Platform', 'Cloud Computing', 'REST API', 'Machine Learning', 'Git/GitHub'],
   },
@@ -282,11 +282,11 @@ const EDUCATION = [
     institution: 'Universitas Pembangunan Nasional "Veteran" Jawa Timur',
     period: '2022 – 2026',
     location: 'Surabaya, Indonesia',
-    gpa: '3.69 / 4.00',
+    gpa: '3.69 / 4.00 (Honors)',
     details: [
-      'Mengembangkan aplikasi web dan mobile dengan fokus utama pada analisis sistem dan perancangan basis data relasional.',
-      'Menerapkan arsitektur aplikasi full-stack modern, pengembangan REST API, dan integrasi layanan cloud computing.',
-      'Lulus dengan predikat akademik Sangat Memuaskan (IPK 3.69 / 4.00).',
+      'Developed web and mobile applications with a core focus on system analysis and relational database design.',
+      'Applied modern full-stack application architecture, REST API engineering, and cloud service integration.',
+      'Graduated with academic Honors (GPA 3.69 / 4.00, Sangat Memuaskan).',
     ],
   },
   {
@@ -296,8 +296,8 @@ const EDUCATION = [
     location: 'Indonesia',
     gpa: 'Graduate',
     details: [
-      'Menyelesaikan kurikulum intensif arsitektur Google Cloud Platform, microservices backend, dan implementasi deployment produksi.',
-      'Lulus 8 sertifikasi kompetensi teknis dari Dicoding Indonesia dan Google.',
+      'Completed an intensive Google Cloud Platform curriculum, microservices backend development, and scalable production deployment practices.',
+      'Graduated with 8 technical competency certifications from Google and Dicoding Indonesia.',
     ],
   },
 ];
@@ -535,7 +535,7 @@ export default function Home() {
                     <ArrowDown size={16} />
                   </a>
                   <a
-                    href="https://wa.me/6282232601115?text=Halo%20Kandhi,%20saya%20tertarik%20dengan%20portofolio%20Anda"
+                    href="https://wa.me/6282232601115?text=Hello%20Kandhi,%20I%20am%20interested%20in%20your%20portfolio"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.heroCtaSecondary}
@@ -596,7 +596,7 @@ export default function Home() {
                         <span className={styles.codeKeyword}>const</span>{' '}
                         <span className={styles.codeVar}>engineer</span> = &#123;{'\n'}
                         {'  '}<span className={styles.codeKey}>name</span>: <span className={styles.codeString}>&quot;Kandhi Surya Atmadja&quot;</span>,{'\n'}
-                        {'  '}<span className={styles.codeKey}>degree</span>: <span className={styles.codeString}>&quot;S1 Sistem Informasi (UPNVJT)&quot;</span>,{'\n'}
+                        {'  '}<span className={styles.codeKey}>degree</span>: <span className={styles.codeString}>&quot;B.S. in Information Systems (UPNVJT)&quot;</span>,{'\n'}
                         {'  '}<span className={styles.codeKey}>gpa</span>: <span className={styles.codeNum}>3.69</span>, <span className={styles.codeComment}>// Honors</span>{'\n'}
                         {'  '}<span className={styles.codeKey}>focus</span>: [<span className={styles.codeString}>&quot;Full Stack Web&quot;</span>, <span className={styles.codeString}>&quot;Mobile Expo&quot;</span>, <span className={styles.codeString}>&quot;Cloud Systems&quot;</span>],{'\n'}
                         {'  '}<span className={styles.codeKey}>publicInternship</span>: <span className={styles.codeString}>&quot;Dinas Sosial Provinsi Jawa Timur&quot;</span>,{'\n'}

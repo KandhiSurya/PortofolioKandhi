@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/context/ThemeContext';
 export const metadata: Metadata = {
   title: 'Kandhi Surya Atmadja | Full Stack Web & Mobile Developer',
   description:
-    'Website portofolio profesional Kandhi Surya Atmadja, lulusan Sistem Informasi UPN Veteran Jawa Timur (GPA 3.69 / 4.00), alumni Bangkit Academy 2024 Cloud Computing, dan berpengalaman di Dinas Sosial Provinsi Jawa Timur.',
+    'Professional portfolio of Kandhi Surya Atmadja, Information Systems graduate from UPN Veteran Jawa Timur (GPA 3.69 / 4.00), Bangkit Academy 2024 Cloud Computing graduate, and Full Stack Developer with government & enterprise platform experience.',
   keywords: [
     'Kandhi Surya Atmadja',
     'Full Stack Web Developer',
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" data-scroll-behavior="smooth">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

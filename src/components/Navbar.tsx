@@ -100,7 +100,7 @@ export default function Navbar() {
 
           {/* Let's Talk CTA */}
           <a
-            href="https://wa.me/6282232601115?text=Halo%20Kandhi,%20saya%20tertarik%20dengan%20portofolio%20Anda"
+            href="https://wa.me/6282232601115?text=Hello%20Kandhi,%20I%20am%20interested%20in%20your%20portfolio"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.headerCta}
