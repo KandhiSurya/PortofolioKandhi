@@ -236,6 +236,7 @@ const EXPERIENCES = [
       'Implemented multi-tiered Role-Based Access Control (RBAC): Super Admin, Provincial Division, and Regional Operator.',
     ],
     tags: ['Next.js', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'RBAC', 'Data Validation'],
+    repoUrl: 'https://github.com/KandhiSurya/sistem-bansos',
   },
   {
     idx: '02',
@@ -1014,6 +1015,18 @@ export default function Home() {
                         {t}
                       </span>
                     ))}
+                    {'repoUrl' in item && item.repoUrl && (
+                      <a
+                        href={item.repoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.expRepoBtn}
+                      >
+                        <GithubIcon size={13} />
+                        <span>View Repository</span>
+                        <ArrowUpRight size={12} />
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
