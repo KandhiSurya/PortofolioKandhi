@@ -31,6 +31,35 @@
   --color-error: #f87171;
   --color-success: #4ade80;
 
+  /* Card & Surface Tokens */
+  --card-bg: rgba(15, 15, 19, 0.78);
+  --card-bg-solid: #0f0f13;
+  --card-header-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-border-hover: rgba(255, 255, 255, 0.28);
+  --card-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+  --card-shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 30px rgba(255, 255, 255, 0.03);
+
+  --modal-bg: #0d0d12;
+  --modal-backdrop: rgba(7, 7, 9, 0.85);
+
+  --badge-bg: rgba(255, 255, 255, 0.05);
+  --badge-border: rgba(255, 255, 255, 0.1);
+  --badge-text: #e2e8f0;
+
+  --code-bg: rgba(15, 15, 19, 0.85);
+  --code-border: rgba(255, 255, 255, 0.12);
+  --code-text: #cbd5e1;
+  --code-kw: #f472b6;
+  --code-var: #93c5fd;
+  --code-key: #e2e8f0;
+  --code-str: #a7f3d0;
+  --code-num: #fde047;
+  --code-cmt: #64748b;
+
+  --filter-active-bg: #ffffff;
+  --filter-active-text: #070709;
+
   /* Ambient Radial Glow Gradients */
   --glow-radial-hero: radial-gradient(ellipse 75% 55% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
   --glow-radial-section: radial-gradient(ellipse 60% 45% at 50% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 75%);
@@ -73,8 +102,8 @@
 }
 
 [data-theme="light"] {
-  --color-liquid-abyss: #ffffff;
-  --color-liquid-deep: #f8fafc;
+  --color-liquid-abyss: #f8fafc;
+  --color-liquid-deep: #ffffff;
   --color-liquid-kelp: #f1f5f9;
   --color-liquid-raised: #ffffff;
   --color-liquid-mist: #0f172a;
@@ -83,7 +112,7 @@
   --color-silver-mist: #64748b;
   --color-slate-deep: #e2e8f0;
   --color-border-subtle: rgba(0, 0, 0, 0.08);
-  --color-border-strong: rgba(0, 0, 0, 0.18);
+  --color-border-strong: rgba(0, 0, 0, 0.2);
 
   --color-lavender-phosphor: #0f172a;
   --color-aurora: #334155;
@@ -96,14 +125,43 @@
   --color-action-active: #334155;
   --color-on-action: #ffffff;
 
+  /* Card & Surface Tokens */
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --card-bg-solid: #ffffff;
+  --card-header-bg: rgba(0, 0, 0, 0.025);
+  --card-border: rgba(0, 0, 0, 0.08);
+  --card-border-hover: rgba(0, 0, 0, 0.22);
+  --card-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+  --card-shadow-hover: 0 20px 50px rgba(15, 23, 42, 0.12), 0 0 30px rgba(15, 23, 42, 0.03);
+
+  --modal-bg: #ffffff;
+  --modal-backdrop: rgba(15, 23, 42, 0.6);
+
+  --badge-bg: rgba(0, 0, 0, 0.04);
+  --badge-border: rgba(0, 0, 0, 0.08);
+  --badge-text: #1e293b;
+
+  --code-bg: rgba(255, 255, 255, 0.95);
+  --code-border: rgba(0, 0, 0, 0.1);
+  --code-text: #1e293b;
+  --code-kw: #c026d3;
+  --code-var: #2563eb;
+  --code-key: #0f172a;
+  --code-str: #059669;
+  --code-num: #d97706;
+  --code-cmt: #64748b;
+
+  --filter-active-bg: #0f172a;
+  --filter-active-text: #ffffff;
+
   --nav-scrolled: rgba(255, 255, 255, 0.92);
   --nav-ink: #0f172a;
   --nav-accent: #0f172a;
   --nav-control: #f1f5f9;
 
-  --glow-radial-hero: radial-gradient(ellipse 75% 55% at 50% 0%, rgba(0, 0, 0, 0.04) 0%, transparent 70%);
-  --glow-radial-section: radial-gradient(ellipse 60% 45% at 50% 50%, rgba(0, 0, 0, 0.02) 0%, transparent 75%);
-  --glow-radial-footer: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(0, 0, 0, 0.03) 0%, transparent 70%);
+  --glow-radial-hero: radial-gradient(ellipse 75% 55% at 50% 0%, rgba(15, 23, 42, 0.05) 0%, transparent 70%);
+  --glow-radial-section: radial-gradient(ellipse 60% 45% at 50% 50%, rgba(15, 23, 42, 0.03) 0%, transparent 75%);
+  --glow-radial-footer: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(15, 23, 42, 0.04) 0%, transparent 70%);
 }
 
 [data-motion="paused"] * {

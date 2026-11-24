@@ -128,6 +128,9 @@ export default function Background3D() {
     const render = () => {
       // Check pause motion preference
       const isMotionPaused = document.documentElement.getAttribute('data-motion') === 'paused';
+      const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+      const rgb = isLight ? '30, 41, 59' : '255, 255, 255';
+      const alphaBoost = isLight ? 1.6 : 1.0;
 
       if (!isMotionPaused) {
         time += 0.008;
@@ -211,8 +214,8 @@ export default function Background3D() {
           const dy = p1.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < 85) {
-            const alpha = (1 - dist / 85) * 0.08 * ((p1.depthAlpha + p2.depthAlpha) / 2);
-            ctx.strokeStyle = `rgba(255, 255, 255, ${alpha.toFixed(3)})`;
+            const alpha = (1 - dist / 85) * 0.08 * ((p1.depthAlpha + p2.depthAlpha) / 2) * alphaBoost;
+            ctx.strokeStyle = `rgba(${rgb}, ${alpha.toFixed(3)})`;
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
@@ -223,7 +226,7 @@ export default function Background3D() {
 
       // Draw particle dots
       for (const p of projectedParticles) {
-        ctx.fillStyle = `rgba(255, 255, 255, ${(p.depthAlpha * 0.45).toFixed(3)})`;
+        ctx.fillStyle = `rgba(${rgb}, ${(p.depthAlpha * (isLight ? 0.6 : 0.45)).toFixed(3)})`;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius * (p.z > 0 ? 1.2 : 0.8), 0, Math.PI * 2);
         ctx.fill();
@@ -236,8 +239,8 @@ export default function Background3D() {
         const projected = ring.map(([x, y, z]) => project(x, y, z, 1.05));
         for (let i = 0; i < projected.length; i++) {
           const next = projected[(i + 1) % projected.length];
-          const edgeAlpha = ((projected[i].depthAlpha + next.depthAlpha) / 2) * alphaMult;
-          ctx.strokeStyle = `rgba(255, 255, 255, ${edgeAlpha.toFixed(3)})`;
+          const edgeAlpha = ((projected[i].depthAlpha + next.depthAlpha) / 2) * alphaMult * alphaBoost;
+          ctx.strokeStyle = `rgba(${rgb}, ${edgeAlpha.toFixed(3)})`;
           ctx.beginPath();
           ctx.moveTo(projected[i].x, projected[i].y);
           ctx.lineTo(next.x, next.y);
@@ -256,9 +259,9 @@ export default function Background3D() {
       for (const [startIdx, endIdx] of icosahedronEdges) {
         const p1 = projectedIcosa[startIdx];
         const p2 = projectedIcosa[endIdx];
-        const edgeAlpha = ((p1.depthAlpha + p2.depthAlpha) / 2) * 0.16;
+        const edgeAlpha = ((p1.depthAlpha + p2.depthAlpha) / 2) * (isLight ? 0.22 : 0.16);
 
-        ctx.strokeStyle = `rgba(255, 255, 255, ${edgeAlpha.toFixed(3)})`;
+        ctx.strokeStyle = `rgba(${rgb}, ${edgeAlpha.toFixed(3)})`;
         ctx.beginPath();
         ctx.moveTo(p1.x, p1.y);
         ctx.lineTo(p2.x, p2.y);
@@ -267,15 +270,15 @@ export default function Background3D() {
 
       // Vertices Dots with Subtle Radial Glow
       for (const p of projectedIcosa) {
-        const dotAlpha = p.depthAlpha * 0.7;
-        ctx.fillStyle = `rgba(255, 255, 255, ${dotAlpha.toFixed(3)})`;
+        const dotAlpha = p.depthAlpha * (isLight ? 0.85 : 0.7);
+        ctx.fillStyle = `rgba(${rgb}, ${dotAlpha.toFixed(3)})`;
         ctx.beginPath();
         ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
         ctx.fill();
 
         // Vertex glow halo
         if (p.z > 0) {
-          ctx.fillStyle = `rgba(255, 255, 255, ${(dotAlpha * 0.15).toFixed(3)})`;
+          ctx.fillStyle = `rgba(${rgb}, ${(dotAlpha * (isLight ? 0.2 : 0.15)).toFixed(3)})`;
           ctx.beginPath();
           ctx.arc(p.x, p.y, 6.5, 0, Math.PI * 2);
           ctx.fill();
@@ -288,8 +291,8 @@ export default function Background3D() {
       for (const [startIdx, endIdx] of icosahedronEdges) {
         const p1 = projectedInner[startIdx];
         const p2 = projectedInner[endIdx];
-        const edgeAlpha = ((p1.depthAlpha + p2.depthAlpha) / 2) * 0.08;
-        ctx.strokeStyle = `rgba(255, 255, 255, ${edgeAlpha.toFixed(3)})`;
+        const edgeAlpha = ((p1.depthAlpha + p2.depthAlpha) / 2) * (isLight ? 0.12 : 0.08);
+        ctx.strokeStyle = `rgba(${rgb}, ${edgeAlpha.toFixed(3)})`;
         ctx.beginPath();
         ctx.moveTo(p1.x, p1.y);
         ctx.lineTo(p2.x, p2.y);
