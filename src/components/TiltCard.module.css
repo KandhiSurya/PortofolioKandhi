@@ -2,10 +2,15 @@
   position: relative;
   transform-style: preserve-3d;
   will-change: transform;
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
 }
 
 .tiltInner {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   height: 100%;
   transform-style: preserve-3d;
   position: relative;
