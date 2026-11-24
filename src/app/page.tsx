@@ -84,7 +84,7 @@ const PROJECTS: Project[] = [
     ],
     impact:
       'Replaced manual tracking with a centralized platform, drastically improving recipient validation accuracy and social assistance distribution transparency.',
-    image: '/images/project-1.jpg',
+    image: '/images/project-bansos.png',
     mockupType: 'browser',
     browserUrl: 'https://sistem-bansos-three.vercel.app',
     tags: ['Next.js', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'RBAC', 'REST API'],
