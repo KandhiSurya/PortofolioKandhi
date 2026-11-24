@@ -774,6 +774,26 @@
   cursor: pointer;
 }
 
+.bentoImageFrameMobile {
+  background: radial-gradient(circle at center, rgba(30, 41, 59, 0.45) 0%, rgba(10, 10, 15, 0.95) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bentoImageFrameMobile .bentoCoverImage {
+  object-fit: contain;
+  padding: 0.5rem 0;
+}
+
+.bentoImageFrameMobile .bentoHoverOverlay {
+  display: none;
+}
+
+:global([data-theme="light"]) .bentoImageFrameMobile {
+  background: radial-gradient(circle at center, #f8fafc 0%, #e2e8f0 100%);
+}
+
 .bentoCoverImage {
   object-fit: cover;
   transition: transform 0.45s var(--ease-out);
@@ -2084,6 +2104,22 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   background: var(--color-liquid-kelp);
+}
+
+.modalImageWrapperMobile {
+  background: radial-gradient(circle at center, rgba(30, 41, 59, 0.45) 0%, rgba(10, 10, 15, 0.95) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImageWrapperMobile .modalImg {
+  object-fit: contain;
+  padding: 0.75rem 0;
+}
+
+:global([data-theme="light"]) .modalImageWrapperMobile {
+  background: radial-gradient(circle at center, #f8fafc 0%, #e2e8f0 100%);
 }
 
 .modalImg {

@@ -113,7 +113,7 @@ const PROJECTS: Project[] = [
     ],
     impact:
       'Enabled 24/7 self-service public information access while significantly reducing repetitive administrative inquiry workloads for agency staff.',
-    image: '/images/project-2.jpg',
+    image: '/images/project-mobile-dinsos.jpg',
     mockupType: 'mobile',
     tags: ['React', 'Expo Go', 'Laravel', 'PHP', 'Supabase', 'AI API', 'REST API'],
     githubUrl: 'https://github.com/Kryx404/dinsos-mobile-fix',
@@ -820,7 +820,7 @@ export default function Home() {
 
                       {/* Visual Image Preview */}
                       <div
-                        className={styles.bentoImageFrame}
+                        className={`${styles.bentoImageFrame} ${proj.mockupType === 'mobile' ? styles.bentoImageFrameMobile : ''}`}
                         onClick={() => setSelectedProject(proj)}
                         role="button"
                         tabIndex={0}
@@ -1198,7 +1198,7 @@ export default function Home() {
               </button>
             </div>
 
-            <div className={styles.modalImageWrapper}>
+            <div className={`${styles.modalImageWrapper} ${selectedProject.mockupType === 'mobile' ? styles.modalImageWrapperMobile : ''}`}>
               <Image
                 src={selectedProject.image}
                 alt={selectedProject.title}
