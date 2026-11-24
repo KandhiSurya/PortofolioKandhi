@@ -260,7 +260,7 @@
 }
 
 .mobileSocials a:hover {
-  color: #ffffff;
+  color: var(--color-platinum);
 }
 
 .mobileFootnote {
