@@ -2,24 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Sun, Moon, Pause, Play, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Sun, Moon, Menu, X } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
-  const [isMotionPaused, setIsMotionPaused] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    // Check saved motion preference
-    const storedMotion = localStorage.getItem('motion_preference');
-    if (storedMotion === 'paused') {
-      setIsMotionPaused(true);
-      document.documentElement.setAttribute('data-motion', 'paused');
-    }
-
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 40);
     };
@@ -27,18 +19,6 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const toggleMotion = () => {
-    const nextState = !isMotionPaused;
-    setIsMotionPaused(nextState);
-    if (nextState) {
-      document.documentElement.setAttribute('data-motion', 'paused');
-      localStorage.setItem('motion_preference', 'paused');
-    } else {
-      document.documentElement.removeAttribute('data-motion');
-      localStorage.setItem('motion_preference', 'normal');
-    }
-  };
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -76,17 +56,6 @@ export default function Navbar() {
 
         {/* Action Tools */}
         <div className={styles.navbarTools}>
-          {/* Motion Pause Toggle */}
-          <button
-            type="button"
-            onClick={toggleMotion}
-            className={styles.toolBtn}
-            aria-label={isMotionPaused ? 'Play animations' : 'Pause animations'}
-            title={isMotionPaused ? 'Resume animations' : 'Pause animations'}
-          >
-            {isMotionPaused ? <Play size={16} /> : <Pause size={16} />}
-          </button>
-
           {/* Theme Toggle */}
           <button
             type="button"
@@ -97,17 +66,6 @@ export default function Navbar() {
           >
             {theme === 'dark' ? <Sun size={17} /> : <Moon size={17} />}
           </button>
-
-          {/* Let's Talk CTA */}
-          <a
-            href="https://wa.me/6282232601115?text=Hello%20Kandhi,%20I%20am%20interested%20in%20your%20portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.headerCta}
-          >
-            <span>Let&apos;s Talk</span>
-            <ArrowUpRight size={15} />
-          </a>
 
           {/* Mobile Menu Trigger */}
           <button
