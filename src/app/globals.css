@@ -227,3 +227,18 @@ button {
   padding: 0 var(--spacing-24);
   width: 100%;
 }
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .heading-lg {
+    font-size: clamp(24px, 7vw, 36px);
+  }
+
+  .tag-pill {
+    padding: 3px 10px;
+    font-size: 11px;
+  }
+}

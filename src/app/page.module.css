@@ -2133,10 +2133,9 @@
 @media (max-width: 1024px) {
   .heroSplitLayout {
     grid-template-columns: 1fr;
-    gap: 2.75rem;
+    gap: 2.5rem;
   }
   .heroRightCol {
-    order: -1;
     width: 100%;
   }
   .terminalCard {
@@ -2144,10 +2143,16 @@
   }
   .aboutGrid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.75rem;
+  }
+  .aboutPortraitCard {
+    max-width: 420px;
+    margin: 0 auto;
+    width: 100%;
   }
   .bentoProjectsGrid {
     grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
   .bentoCardHero {
     grid-column: span 1;
@@ -2156,24 +2161,35 @@
     grid-template-columns: 1fr;
   }
   .bentoCardHero .bentoImageFrame {
-    min-height: 280px;
+    min-height: 260px;
   }
   .skillsBentoGrid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   .metricsRibbon {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.25rem;
   }
 }
 
 @media (max-width: 768px) {
   .heroSection {
-    padding-top: 110px;
+    padding-top: 100px;
+    padding-bottom: 3.5rem;
+  }
+  .heroTitle {
+    font-size: clamp(1.85rem, 6.5vw, 2.75rem);
+  }
+  .heroDescription {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
   .metricsRibbon {
-    grid-template-columns: 1fr;
-    padding: 1.25rem;
-    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.25rem 1rem;
+    gap: 1rem;
   }
   .projectsHeaderRow {
     flex-direction: column;
@@ -2183,17 +2199,309 @@
   .filterPillsRow {
     width: 100%;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
     justify-content: flex-start;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
   }
-  .certDocFooter {
+  .filterPillBtn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0.45rem 1rem;
+    font-size: 0.82rem;
+  }
+  .experienceSection,
+  .skillsSection,
+  .aboutSection,
+  .projectsSection {
+    padding-block: var(--spacing-48);
+  }
+  .experienceCard {
+    padding: 1.35rem 1.25rem;
+  }
+  .educationBlock {
+    margin-top: 3.5rem;
+    padding-top: 2.5rem;
+    gap: 1.5rem;
+  }
+  .educationGrid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
-    align-items: center;
   }
-  .certInnerBorder {
-    padding: 1.25rem 1rem;
+  .educationCard {
+    padding: 1.35rem 1.25rem;
   }
-  .certModalBody {
+  .credentialsVault {
+    margin-top: 3.5rem;
+    padding-top: 2.5rem;
+  }
+  .credentialsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .credentialCard {
     padding: 1.25rem;
+  }
+  .modalBackdrop,
+  .certModalBackdrop {
+    padding: 0.75rem 0.5rem;
+  }
+  .modalDialog,
+  .certModalDialog {
+    max-height: 94vh;
+    border-radius: 16px;
+  }
+  .modalHeader,
+  .certModalHeader {
+    padding: 1.25rem 1.25rem 1rem;
+    gap: 1rem;
+  }
+  .modalBody,
+  .certModalBody {
+    padding: 1.25rem 1rem;
+    gap: 1.25rem;
+  }
+  .certPdfContainer {
+    min-height: 280px;
+    aspect-ratio: 16 / 11;
+  }
+  .certActionToolbar {
+    gap: 0.65rem;
+    padding: 0.75rem;
+  }
+  .certVerifyExternalBtn,
+  .certOpenPdfBtn {
+    font-size: 0.82rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding-top: 88px;
+    padding-bottom: 2.5rem;
+  }
+  .heroTitle {
+    font-size: clamp(1.65rem, 7.5vw, 2.2rem);
+    line-height: 1.15;
+  }
+  .heroDescription {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin-top: 1rem;
+  }
+  .heroActions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+  .heroCtaPrimary,
+  .heroCtaSecondary {
+    width: 100%;
+    justify-content: center;
+    padding: 0.8rem 1.25rem;
+    font-size: 0.88rem;
+  }
+  .heroChipsRow {
+    gap: 0.45rem;
+    margin-top: 1.25rem;
+  }
+  .heroChip {
+    font-size: 0.76rem;
+    padding: 0.4rem 0.7rem;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+  .metricsRibbon {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0.95rem;
+    margin-top: 2rem;
+  }
+  .metricItem {
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0.35rem 0.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .metricItem:last-child {
+    border-bottom: none;
+  }
+  .metricVal {
+    font-size: 1.35rem;
+  }
+  .metricLbl {
+    font-size: 0.74rem;
+    text-align: right;
+  }
+  .terminalCard {
+    border-radius: 14px;
+  }
+  .terminalHeader {
+    padding: 0.65rem 0.85rem;
+  }
+  .terminalTitle {
+    font-size: 0.68rem;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .terminalStatusPill {
+    font-size: 0.65rem;
+    padding: 2px 7px;
+  }
+  .terminalBody {
+    padding: 0.85rem 0.75rem;
+  }
+  .codeSnippet {
+    font-size: 0.7rem;
+    line-height: 1.48;
+  }
+  .terminalFooterBar {
+    font-size: 0.62rem;
+    padding-top: 0.6rem;
+    flex-wrap: wrap;
+    line-height: 1.35;
+  }
+  .aboutText {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+  .highlightCard {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  .highlightTitle {
+    font-size: 0.92rem;
+  }
+  .highlightDesc {
+    font-size: 0.82rem;
+  }
+  .portraitFrame {
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+  }
+  .bentoProjectCard {
+    border-radius: 16px;
+  }
+  .bentoCardContent {
+    padding: 1.15rem 1rem;
+    gap: 0.65rem;
+  }
+  .bentoProjectTitle {
+    font-size: 1.15rem;
+  }
+  .bentoSummaryText {
+    font-size: 0.84rem;
+  }
+  .bentoImpactBox {
+    font-size: 0.78rem;
+    padding: 0.6rem 0.75rem;
+  }
+  .bentoActionsRow {
+    gap: 0.45rem;
+    padding-top: 1rem;
+  }
+  .bentoDetailBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.55rem 1rem;
+  }
+  .bentoExternalBtn {
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.78rem;
+  }
+  .skillBentoCard {
+    padding: 1.25rem 1rem;
+    border-radius: 16px;
+  }
+  .bentoSkillTitle {
+    font-size: 1.1rem;
+  }
+  .bentoSkillSummary {
+    font-size: 0.84rem;
+  }
+  .expCardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .expRoleTitle {
+    font-size: 1.1rem;
+  }
+  .expSummaryText {
+    font-size: 0.86rem;
+  }
+  .disclosureSummary {
+    font-size: 0.82rem;
+  }
+  .contributionItem {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+  .expActionsRow {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.65rem;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .expLiveBtn,
+  .expRepoBtn {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.65rem;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+  .eduDegree {
+    font-size: 1.05rem;
+  }
+  .eduInstitution {
+    font-size: 0.86rem;
+  }
+  .eduGpa {
+    font-size: 0.82rem;
+  }
+  .eduList li {
+    font-size: 0.82rem;
+  }
+  .certModalTitle {
+    font-size: 1.1rem;
+  }
+  .certModalSub {
+    font-size: 0.78rem;
+  }
+  .certActionToolbar {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.55rem;
+  }
+  .certVerifyExternalBtn,
+  .certOpenPdfBtn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 0.55rem 0.9rem;
+  }
+  .modalActions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.55rem;
+  }
+  .modalPrimaryAction,
+  .modalSecondaryAction {
+    width: 100%;
+    justify-content: center;
   }
 }
