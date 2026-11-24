@@ -320,6 +320,7 @@ type Certificate = {
   credentialId: string;
   verificationUrl?: string;
   pdfUrl: string;
+  imageUrl: string;
   hours?: string;
   score?: string;
   skills: string[];
@@ -336,6 +337,7 @@ const CERTIFICATIONS: Certificate[] = [
     desc: 'Sertifikasi kelulusan program studi independen berskala nasional yang dipimpin oleh Google untuk mencetak talenta teknis berkaliber tinggi pada spesialisasi Cloud Computing.',
     credentialId: 'BA24/GRAD/XXIV-01/C296B4KY2136',
     pdfUrl: '/certificates/bangkit-cloud-computing.pdf',
+    imageUrl: '/certificates/bangkit-cloud-computing.png',
     hours: '900+ Jam Pembelajaran',
     score: 'Full Graduate (Capstone Finished)',
     skills: ['Google Cloud Platform', 'Cloud Architecture', 'REST APIs', 'Containerization Docker', 'DevOps & SRE', 'Associate Cloud Engineer'],
@@ -352,6 +354,7 @@ const CERTIFICATIONS: Certificate[] = [
     credentialId: 'GRX54M0N2P0M',
     verificationUrl: 'https://www.dicoding.com/certificates/GRX54M0N2P0M',
     pdfUrl: '/certificates/google-cloud-engineer.pdf',
+    imageUrl: '/certificates/google-cloud-engineer.png',
     hours: '42 Jam Kurikulum',
     skills: ['Compute Engine', 'Google Cloud Storage', 'VPC Networks', 'IAM Security', 'Cloud Operations Monitoring', 'Cloud Marketplace'],
   },
@@ -367,6 +370,7 @@ const CERTIFICATIONS: Certificate[] = [
     credentialId: '0LZ040NVNP65',
     verificationUrl: 'https://www.dicoding.com/certificates/0LZ040NVNP65',
     pdfUrl: '/certificates/applied-ml-gcp.pdf',
+    imageUrl: '/certificates/applied-ml-gcp.png',
     hours: '40 Jam Kurikulum',
     skills: ['TensorFlow Production', 'Model Training on GCP', 'Compute Engine', 'App Engine', 'Vertex AI & MLOps', 'Cloud Storage & Firestore'],
   },
@@ -382,6 +386,7 @@ const CERTIFICATIONS: Certificate[] = [
     credentialId: 'GRX54WEVVP0M',
     verificationUrl: 'https://www.dicoding.com/certificates/GRX54WEVVP0M',
     pdfUrl: '/certificates/backend-gcp.pdf',
+    imageUrl: '/certificates/backend-gcp.png',
     hours: '45 Jam Kurikulum',
     skills: ['RESTful API Architecture', 'Node.js & Hapi Framework', 'Compute Engine SSH', 'Postman Automated Testing', 'CRUD API Bookshelf'],
   },
@@ -397,6 +402,7 @@ const CERTIFICATIONS: Certificate[] = [
     credentialId: '0LZ04EJR3P65',
     verificationUrl: 'https://www.dicoding.com/certificates/0LZ04EJR3P65',
     pdfUrl: '/certificates/basic-ai.pdf',
+    imageUrl: '/certificates/basic-ai.png',
     hours: '10 Jam Kurikulum',
     skills: ['AI Fundamentals', 'Data for AI', 'Machine Learning Concepts', 'Deep Learning Implementation'],
   },
@@ -412,6 +418,7 @@ const CERTIFICATIONS: Certificate[] = [
     credentialId: '81P2457GOZOY',
     verificationUrl: 'https://www.dicoding.com/certificates/81P2457GOZOY',
     pdfUrl: '/certificates/javascript-fundamentals.pdf',
+    imageUrl: '/certificates/javascript-fundamentals.png',
     hours: '46 Jam Kurikulum',
     skills: ['ECMAScript ES6+', 'Node.js Runtime', 'OOP Paradigm', 'Functional Programming', 'Async/Await & Promises', 'Code Quality & Testing'],
   },
@@ -427,6 +434,7 @@ const CERTIFICATIONS: Certificate[] = [
     credentialId: 'NVP74YDGGPR0',
     verificationUrl: 'https://www.dicoding.com/certificates/NVP74YDGGPR0',
     pdfUrl: '/certificates/web-fundamentals.pdf',
+    imageUrl: '/certificates/web-fundamentals.png',
     hours: '41 Jam Kurikulum',
     skills: ['Semantic HTML5', 'CSS3 Deep-Dive', 'Responsive Flexbox', 'Layouting Architecture', 'DOM Interaction'],
   },
@@ -442,6 +450,7 @@ const CERTIFICATIONS: Certificate[] = [
     credentialId: '4EXGQWJNEZRL',
     verificationUrl: 'https://www.dicoding.com/certificates/4EXGQWJNEZRL',
     pdfUrl: '/certificates/git-github.pdf',
+    imageUrl: '/certificates/git-github.png',
     hours: '15 Jam Kurikulum',
     skills: ['Git Version Control', 'Branching & Merging', 'Conflict Resolution', 'Pull Request Collaboration', 'GitHub Workflows'],
   },
@@ -457,6 +466,7 @@ const CERTIFICATIONS: Certificate[] = [
     credentialId: '98XW5D5D4PM3',
     verificationUrl: 'https://www.dicoding.com/certificates/98XW5D5D4PM3',
     pdfUrl: '/certificates/programming-fundamentals.pdf',
+    imageUrl: '/certificates/programming-fundamentals.png',
     hours: '9 Jam Kurikulum',
     score: 'Nilai Kelulusan: 91 / 100',
     skills: ['Software Requirements Analysis', 'Flowchart & Algorithm Logic', 'Pseudocode Design', 'Technical Documentation'],
@@ -1101,22 +1111,21 @@ export default function Home() {
                       tabIndex={0}
                       title={`Click to preview certificate for ${cred.title}`}
                     >
-                      {/* Mini Certificate Visual Mockup Preview */}
+                      {/* Real Certificate Visual Preview */}
                       <div className={styles.certMiniMockup}>
-                        <div className={styles.certMiniHeader}>
-                          <Award size={14} className={styles.certMiniRibbon} />
-                          <span className={styles.certMiniIssuer}>{cred.issuer}</span>
-                          <span className={styles.certMiniYear}>{cred.year}</span>
-                        </div>
-                        <div className={styles.certMiniBody}>
-                          <div className={styles.certMiniWatermark}>VERIFIED</div>
-                          <p className={styles.certMiniRecipient}>Kandhi Surya Atmadja</p>
-                          <h5 className={styles.certMiniTitle}>{cred.title}</h5>
-                          <span className={styles.certMiniId}>{cred.credentialId}</span>
+                        <Image
+                          src={cred.imageUrl}
+                          alt={cred.title}
+                          fill
+                          className={styles.certCardImage}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                        <div className={styles.certMiniOverlay}>
+                          <span className={styles.certMiniBadge}>{cred.category}</span>
                         </div>
                         <div className={styles.certMiniHoverBar}>
                           <Eye size={13} />
-                          <span>Preview Credential</span>
+                          <span>Inspect Certificate</span>
                         </div>
                       </div>
 
@@ -1337,15 +1346,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Modal Body: Embedded Real PDF Certificate Showcase */}
+            {/* Modal Body: High-Resolution Real Certificate Showcase */}
             <div className={styles.certModalBody}>
               <div className={styles.certDisplayFrame}>
-                {/* Official PDF Document Iframe */}
-                <div className={styles.certPdfContainer}>
-                  <iframe
-                    src={`${CERTIFICATIONS[selectedCertIndex].pdfUrl}#toolbar=0&navpanes=0`}
-                    className={styles.certPdfIframe}
-                    title={CERTIFICATIONS[selectedCertIndex].title}
+                {/* Official High-Resolution Certificate Image */}
+                <div className={styles.certImageContainer}>
+                  <Image
+                    src={CERTIFICATIONS[selectedCertIndex].imageUrl}
+                    alt={CERTIFICATIONS[selectedCertIndex].title}
+                    fill
+                    priority
+                    className={styles.certModalImg}
+                    sizes="(max-width: 900px) 100vw, 880px"
                   />
                 </div>
               </div>
@@ -1442,6 +1454,15 @@ export default function Home() {
                       }`}
                       title={cert.title}
                     >
+                      <div className={styles.certThumbMiniWrap}>
+                        <Image
+                          src={cert.imageUrl}
+                          alt={cert.title}
+                          fill
+                          className={styles.certThumbMiniImg}
+                          sizes="48px"
+                        />
+                      </div>
                       <span className={styles.thumbNumber}>{cIdx + 1}</span>
                       <span className={styles.thumbTitle}>{cert.title}</span>
                     </button>

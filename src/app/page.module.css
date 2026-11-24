@@ -1471,18 +1471,54 @@
   transform: translateY(-2px);
 }
 
-/* Mini Certificate Visual Mockup Preview Header */
+/* Mini Certificate Visual Image Preview */
 .certMiniMockup {
   position: relative;
-  background: linear-gradient(145deg, #121217 0%, #0a0a0e 100%);
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  background: #0d0d12;
   border-bottom: 1px solid var(--card-border);
-  padding: 1.15rem 1.35rem 1rem;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 :global([data-theme="light"]) .certMiniMockup {
-  background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 100%);
+  background: #f1f5f9;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.certCardImage {
+  object-fit: contain;
+  background: #ffffff;
+  padding: 0.35rem;
+  transition: transform 0.4s var(--ease-out);
+}
+
+.credentialCard:hover .certCardImage {
+  transform: scale(1.04);
+}
+
+.certMiniOverlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.certMiniBadge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--color-platinum);
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  letter-spacing: 0.03em;
 }
 
 .certMiniHeader {
@@ -1798,21 +1834,29 @@
   overflow: hidden;
 }
 
-.certPdfContainer {
+.certImageContainer {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 11;
   min-height: 480px;
   border-radius: 10px;
   overflow: hidden;
-  background: var(--color-liquid-abyss);
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.certPdfIframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
+.certModalImg {
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .certImageContainer {
+    min-height: 230px;
+    aspect-ratio: 16 / 11;
+  }
 }
 
 /* Action Toolbar */
@@ -2013,6 +2057,21 @@
   border-color: var(--color-border-strong);
   color: var(--color-platinum);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.certThumbMiniWrap {
+  position: relative;
+  width: 32px;
+  height: 22px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+}
+
+.certThumbMiniImg {
+  object-fit: contain;
 }
 
 .thumbNumber {
