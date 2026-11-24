@@ -794,6 +794,22 @@
   background: radial-gradient(circle at center, #f8fafc 0%, #e2e8f0 100%);
 }
 
+.bentoImageFrameCloud {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bentoImageFrameCloud .bentoCoverImage {
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.bentoImageFrameCloud .bentoHoverOverlay {
+  display: none;
+}
+
 .bentoCoverImage {
   object-fit: cover;
   transition: transform 0.45s var(--ease-out);
@@ -2120,6 +2136,18 @@
 
 :global([data-theme="light"]) .modalImageWrapperMobile {
   background: radial-gradient(circle at center, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.modalImageWrapperCloud {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImageWrapperCloud .modalImg {
+  object-fit: contain;
+  padding: 0.75rem;
 }
 
 .modalImg {

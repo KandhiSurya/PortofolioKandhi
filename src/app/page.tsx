@@ -127,22 +127,23 @@ const PROJECTS: Project[] = [
     period: 'Aug 2024 – Jan 2025',
     title: 'AsikAI — Cloud Architecture & Scalable Back-End (Bangkit Capstone)',
     summary:
-      'Distributed cloud infrastructure and backend engineering on Google Cloud Platform (GCP) for AsikAI (Capstone Team C242-PS432), featuring high-throughput REST APIs, containerization, and Machine Learning model deployment.',
+      'Distributed cloud infrastructure and automated backend pipeline on Google Cloud Platform (GCP) for AsikAI (Capstone Team C242-PS432), orchestrating Cloud Run, Cloud Storage, Firestore, Google Places API, and Vertex AI.',
     problem:
-      'Deploying intelligent machine learning applications requires resilient, scalable cloud infrastructure capable of handling high traffic surges without compromising low inference latency or API security.',
+      'Processing client financial reports (.xlsx) and geographical location data while performing machine learning business analysis requires a resilient, multi-service cloud architecture that eliminates server bottlenecks and guarantees fast response times.',
     solution:
-      'Architected distributed cloud systems on Google Cloud Platform (GCP) for AsikAI, utilizing modern RESTful API services, containerized services on Cloud Run, and automated Machine Learning model integration.',
+      'Engineered an event-driven cloud pipeline on Google Cloud Platform (GCP) connecting mobile clients to Cloud Run, persisting files to Cloud Storage, indexing structured data in Firestore, fetching geospatial review insights via Google Places API, and running machine learning models with Vertex AI for real-time sentiment and financial analysis.',
     highlights: [
-      'Engineered cloud infrastructure for Bangkit Capstone Team C242-PS432 (AsikAI) leveraging Google Cloud Platform (Cloud Run, Cloud Storage, VPC)',
-      'Developed high-performance RESTful API endpoints for seamless communication between mobile clients and back-end services',
-      'Deployed Machine Learning models on GCP, enabling real-time inference and low-latency response payloads',
-      'Implemented collaborative software engineering workflows with structured Git/GitHub branching and team code reviews',
+      'Serverless Container Compute with Google Cloud Run orchestrating financial file ingestion and real-time business analysis inference',
+      'Multi-Service Storage Pipeline utilizing Google Cloud Storage for raw report storage and Cloud Firestore for parsed schema indexing',
+      'Geospatial Intelligence via Google Places API integration for location-based review and sentiment data extraction',
+      'Vertex AI & Machine Learning pipeline integration delivering automated finance and sentiment analysis back to the mobile client',
+      'Structured collaborative repository workflows for Bangkit Capstone Team C242-PS432 with Git/GitHub version control',
     ],
     impact:
       'Delivered a fully integrated cloud-native architecture supporting real-time AI capabilities and graduating with distinction from Bangkit Academy 2024.',
-    image: '/images/project-4.jpg',
+    image: '/images/project-asik-ai.png',
     mockupType: 'cloud',
-    tags: ['Google Cloud Platform', 'Cloud Run', 'REST API', 'Machine Learning', 'Docker', 'Git/GitHub'],
+    tags: ['Google Cloud Platform', 'Cloud Run', 'Cloud Firestore', 'Cloud Storage', 'Vertex AI', 'Google Places API', 'Docker'],
     githubUrl: 'https://github.com/C242-PS432-AsikAI',
   },
 ];
@@ -820,7 +821,7 @@ export default function Home() {
 
                       {/* Visual Image Preview */}
                       <div
-                        className={`${styles.bentoImageFrame} ${proj.mockupType === 'mobile' ? styles.bentoImageFrameMobile : ''}`}
+                        className={`${styles.bentoImageFrame} ${proj.mockupType === 'mobile' ? styles.bentoImageFrameMobile : ''} ${proj.mockupType === 'cloud' ? styles.bentoImageFrameCloud : ''}`}
                         onClick={() => setSelectedProject(proj)}
                         role="button"
                         tabIndex={0}
@@ -1198,7 +1199,7 @@ export default function Home() {
               </button>
             </div>
 
-            <div className={`${styles.modalImageWrapper} ${selectedProject.mockupType === 'mobile' ? styles.modalImageWrapperMobile : ''}`}>
+            <div className={`${styles.modalImageWrapper} ${selectedProject.mockupType === 'mobile' ? styles.modalImageWrapperMobile : ''} ${selectedProject.mockupType === 'cloud' ? styles.modalImageWrapperCloud : ''}`}>
               <Image
                 src={selectedProject.image}
                 alt={selectedProject.title}
